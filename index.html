@@ -9,75 +9,7 @@
 
     <title>Tree</title>
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
-
-      * {
-        margin: 0;
-        padding: 0;
-
-        box-sizing: border-box;
-      }
-
-      body {
-        background-color: black;
-        color: white;
-
-        display: flex;
-
-        flex-direction: column;
-
-        justify-content: center;
-        align-items: center;
-
-        gap: 4rem;
-
-        height: 100svh;
-        width: 100svw;
-
-        overflow: hidden;
-      }
-
-      h1 {
-        font-size: 3rem;
-
-        font-family: 'Comic Neue', cursive;
-      }
-
-      #selector {
-        display: grid;
-
-        grid-template-columns: repeat(7, 1fr);
-
-        gap: 1rem;
-      }
-
-      a {
-        display: flex;
-
-        transition: 200ms;
-      }
-
-      a:hover {
-        scale: 1.5;
-      }
-
-      img {
-        image-rendering: pixelated;
-      }
-
-      @media (width <= 80em) {
-        #selector {
-          grid-template-columns: repeat(4, 1fr);
-        }
-      }
-
-      @media (width <= 40em) {
-        #selector {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <h1>
