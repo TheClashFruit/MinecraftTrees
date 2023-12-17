@@ -20,12 +20,5 @@ document.addEventListener('keydown', e => {
       $('#selector').children[--currentSelection].focus();
 
       break;
-    case 'Enter':
-      if ($('#selector').children[0].style.color === 'red') {
-        window.location.href = 'https://www.google.com';
-      } else {
-        window.location.href = 'https://www.youtube.com';
-      }
-      break;
   }
 });
