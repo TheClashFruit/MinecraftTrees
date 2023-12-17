@@ -10,24 +10,102 @@
     <title>Tree</title>
 
     <style>
-      body {
+      @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+      * {
         margin: 0;
         padding: 0;
 
-        background-color: black;
+        box-sizing: border-box;
       }
 
-      #video {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      body {
+        background-color: black;
+        color: white;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 4rem;
+
+        height: 100svh;
+        width: 100svw;
+
+        overflow: hidden;
+      }
+
+      h1 {
+        font-size: 3rem;
+
+        font-family: 'Comic Neue', cursive;
+      }
+
+      #selector {
+        display: grid;
+
+        grid-template-columns: repeat(7, 1fr);
+
+        gap: 1rem;
+      }
+
+      a {
+        display: flex;
+
+        transition: 200ms;
+      }
+
+      a:hover {
+        scale: 1.5;
+      }
+
+      img {
+        image-rendering: pixelated;
+      }
+
+      @media (width <= 80em) {
+        #selector {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media (width <= 40em) {
+        #selector {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
     </style>
   </head>
   <body>
-    <video id="video" width="512" height="512" autoplay loop muted>
-      <source src="tree.mp4" type="video/mp4">
-    </video>
+    <h1>
+      Select Your Tree
+    </h1>
+
+    <div id="selector">
+      <a href="/tree/oak.html">
+        <img height="128px" width="128px" src="/img/oak_sapling.png" alt="Oak Tree" />
+      </a>
+      <a href="/tree/spruce.html">
+        <img height="128px" width="128px" src="/img/spruce_sapling.png" alt="Spruce Tree" />
+      </a>
+      <a href="/tree/birch.html">
+        <img height="128px" width="128px" src="/img/birch_sapling.png" alt="Birch Tree" />
+      </a>
+      <a href="/tree/jungle.html">
+        <img height="128px" width="128px" src="/img/jungle_sapling.png" alt="Jungle Tree" />
+      </a>
+      <a href="/tree/acacia.html">
+        <img height="128px" width="128px" src="/img/acacia_sapling.png" alt="Acacia Tree" />
+      </a>
+      <a href="/tree/dark_oak.html">
+        <img height="128px" width="128px" src="/img/dark_oak_sapling.png" alt="Dark Oak Tree" />
+      </a>
+      <a href="/tree/cherry.html">
+        <img height="128px" width="128px" src="/img/cherry_sapling.png" alt="Cherry Tree" />
+      </a>
+    </div>
   </body>
 </html>
